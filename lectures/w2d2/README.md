@@ -4,7 +4,7 @@ Callbacks, async flow, and multi-threading.
 
 ## Why Async?
 
-![https://miro.medium.com/max/462/0*w2rEwv9mE9xVPhRy.png](Chrome unresponsive)
+![Chrome unresponsive](https://miro.medium.com/max/462/0*w2rEwv9mE9xVPhRy.png)
 
 * We don't know how long to wait for something to happen
 * Something will take a long time (reading file, complex calcuations)
@@ -32,7 +32,7 @@ const getFlights = function(airlines) {
 
 Think of a boarding gate lineup:
 
-![https://raw.githubusercontent.com/tborsa/lectures/master/week2/day2/assets/queue.jpg](boarding of a flight)
+![boarding of a flight](https://raw.githubusercontent.com/tborsa/lectures/master/week2/day2/assets/queue.jpg)
 
 * Customers get processed as they appear, **First-in, first-out** (*FIFO*)
 * Customers requiring immediate processing may get **pushed** to the front of the line
@@ -125,7 +125,7 @@ console.log("after main call");
 
 ### Understanding the Event Loop
 
-![https://miro.medium.com/max/752/1*7GXoHZiIUhlKuKGT22gHmA.png](JavasScript Event Loop)
+![JavasScript Event Loop](https://miro.medium.com/max/752/1*7GXoHZiIUhlKuKGT22gHmA.png)
 
 1 call stack, 1 queue, and a dispatcher to mediate between the two:
 
@@ -142,7 +142,7 @@ Event loop delegates the execution of `setTimeout`, `setInterval`, and other nat
 
 Reference the event loop diagram again:
 
-![https://miro.medium.com/max/792/1*lZ-KXoVNUSOwaq7q8zUBDg.png](event loop diagram)
+![event loop diagram](https://miro.medium.com/max/792/1*lZ-KXoVNUSOwaq7q8zUBDg.png)
 
 **Asynchronous**:
 
@@ -156,7 +156,7 @@ Reference the event loop diagram again:
 
 Think about how the browser knows to check for events: if this were done synchronously, the browser would lag every few seconds.
 
-![https://johnresig.com/files/Timers.png](event loop diagram 2)
+![event loop diagram 2](https://johnresig.com/files/Timers.png)
 
 Examples of **synchronous** code:
 
