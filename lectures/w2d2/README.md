@@ -34,7 +34,7 @@ Think of a boarding gate lineup:
 
 ![boarding of a flight](https://raw.githubusercontent.com/tborsa/lectures/master/week2/day2/assets/queue.jpg)
 
-* Customers get processed as they appear, **First-in, first-out** (*FIFO*)
+* Customers get processed as they appear, **Lirst-in, first-out** (*LIFO*)
 * Customers requiring immediate processing may get **pushed** to the front of the line
 * A mediator (clerk/manager) checks for special needs and validates ID before allowing passengers to board
 
@@ -138,7 +138,7 @@ __Remember this acronym: **SWET**, like SWAT, but constantly checking for your s
 
 #### Pinging
 
-Event loop delegates the execution of `setTimeout`, `setInterval`, and other native web API calls.
+Event loop delegates the execution of `setTimeout`, `setInterval`, and other native web API calls.  The sole purpose of the Event loop is to determine when to process async tasks (when to pop them on to the stack).
 
 Reference the event loop diagram again:
 
@@ -173,6 +173,7 @@ Examples of **synchronous** code:
 2. *What is the `return` value of `setTimeout`?*
 3. *What does `setTimeout(function() {}, 0)` do?*
 4. *How do we execute two functions at the same time?*
+5. [loupe: interactive demo](http://latentflip.com/loupe/)
 
 ## Further Reading
 
