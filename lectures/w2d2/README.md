@@ -20,15 +20,16 @@ const airlines = ["Air Canada", "WestJet", "American Airlines"];
 
 const flights = getFlights(airlines);
 
-const getFlights = function(airlines) {
+function getFlights(airlines) {
 	return airlines.map((airline) => {
 		let flightsForAirline = {};
 		flightsForAirline[airline] = 4;
+		return flightsForAirline;
 	});
 }
 ```
 
-*Even though `getFlights` is defined **after** it gets called, the `function` definition gets **hoisted** as if it had appeared at the very top of the file*.  Note that `function`s **are** variables here.
+*Even though `getFlights` is defined **after** it gets called, the `function` definition gets **hoisted** as if it had appeared at the very top of the file*.
 
 Think of a boarding gate lineup:
 
